@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Overpass", sans-serif;
     background-color: var(--very-dark-blue);
     display: flex;
     justify-content: center;
@@ -66,17 +68,21 @@ p {
     color: var(--light-grey);
     border: none;
     cursor: pointer;
-    transition: all 0.3s;
+    transition:  0.3s;
 }
 
 .rating-btn:hover {
-    background-color: var(--primary-orange);
-    color: var(--white);
+    background-color: var(--light-grey);
+    color: var(--very-dark-blue);
+    transition:  0.3s;
+
 }
 
 .rating-btn.selected {
-    background-color: var(--light-grey);
+    background-color: var(--primary-orange);
     color: var(--white);
+    transition:  0.3s;
+
 }
 
 #submit-btn {
@@ -89,6 +95,7 @@ p {
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s;
+    font-weight: 700;
 }
 
 #submit-btn:hover {
