@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white);
+}
+
+.container {
+    width: 400px;
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.star-icon {
+    background-color: rgba(255,255,255,0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--light-grey);
+    margin-bottom: 20px;
+}
+
+.rating-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    color: var(--light-grey);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.rating-btn:hover {
+    background-color: var(--primary-orange);
+    color: var(--white);
+}
+
+.rating-btn.selected {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: var(--white);
+    color: var(--primary-orange);
+}
+
+.thank-you-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-result {
+    background-color: rgba(255,255,255,0.1);
+    color: var(--primary-orange);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none !important;
+}
